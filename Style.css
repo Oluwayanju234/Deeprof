@@ -1,0 +1,129 @@
+.mainHeader{
+    position: relative;
+    display: flex;
+   
+    flex-direction: column;
+    background-color: rgb(100, 100, 161);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 60px;
+    border-bottom-left-radius: 100px;
+}
+.navbar{
+    width: 59%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.Text{ 
+    text-align: justify;
+    font-family: verdana;
+    padding: 35px 0;
+}
+.img{
+    float: left;
+    display: flex;
+
+} 
+ul li :hover{
+       background: hsl(355, 100%, 74%);
+    color: white;
+    transition: 0.7s;
+}
+.container2{
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 650px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 0;
+    display: block;
+    left: 0;
+    top: 0;
+    background-size: cover;  
+}   
+
+.img2{
+   position: relative;
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    
+}
+.images{
+    width: 100%;
+    height: 650px;
+    background-image: url(Image-1.jpg) ;
+    background-image: url(Image-2.jpg);
+    background-image: url(Image-3.jpg) ;
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0% {  background-image: url(Image-1.jpg);
+      background-position: 0 0;
+    }
+    16.66% { background-image: url(Image-2.jpg);
+      background-position: 0 0;
+    }
+    33.32% { background-image: url(Image-3.jpg);
+      background-position: -800px 0;
+    }
+    49.98% { background-image: url(Image-1.jpg);
+      background-position: -800px 0;
+    }
+    66.64% { background-image: url(Image-2.jpg);
+      background-position: -1600px 0;
+    }
+    83.30% { background-image: url(Image-3.jpg);
+        background-position: -1600px 0;
+      }
+      100% { background-image: url(Image-1.jpg);
+        background-position: 0 0;
+      }
+    }
+
+ .text2{
+    position: absolute;
+    color: white;
+    padding-top: 70px;
+    margin-left: 350px;
+
+ } 
+
+
+ h3{
+    font-size: xx-large;
+    color: white;
+    background: white;
+    color: hsl(356, 100%, 66%);
+    padding: 10px;
+    border-radius: 20px;
+    width: 170px;
+    text-align: center;
+ }
+ h3 :hover{
+    background: hsl(355, 100%, 74%);
+    color: white;
+    transition: 0.7s;
+ }
+
+
+ 
